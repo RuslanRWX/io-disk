@@ -16,8 +16,8 @@
 14 - weighted time spent doing I/Os (ms) <br>
 
 
-# install 
-git clone https://github.com/ruslansvs2/io-disk.git
-mkdir /etc/zabbix/bin
-cd io-disk
-cp io.sh /etc/zabbix/bin
+# install <br> 
+git clone https://github.com/ruslansvs2/io-disk.git <br>
+mkdir /etc/zabbix/bin <br>
+cd io-disk <br>
+cp io.sh /etc/zabbix/bin <br>
