@@ -17,7 +17,7 @@
 
 
 # install 
-git clone https://github.com/ruslansvs2/smart.git
+git clone https://github.com/ruslansvs2/io-disk.git
 mkdir /etc/zabbix/bin
-cd smart
-cp smart.sh /etc/zabbix/bin
+cd io-disk
+cp io.sh /etc/zabbix/bin
