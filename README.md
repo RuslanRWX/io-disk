@@ -19,5 +19,6 @@
 # install <br> 
 git clone https://github.com/ruslansvs2/io-disk.git <br>
 mkdir /etc/zabbix/bin <br>
+mkdir /etc/zabbix/tmp <br>
 cd io-disk <br>
 cp io.sh /etc/zabbix/bin <br>
