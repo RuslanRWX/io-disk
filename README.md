@@ -14,3 +14,10 @@
 12 - I/Os currently in progress <br>
 13 - time spent doing I/Os (ms) <br>
 14 - weighted time spent doing I/Os (ms) <br>
+
+
+# install 
+git clone https://github.com/ruslansvs2/smart.git
+mkdir /etc/zabbix/bin
+cd smart
+cp smart.sh /etc/zabbix/bin
