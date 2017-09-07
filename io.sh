@@ -91,7 +91,6 @@ geom disk list | grep 'Geom name' | sed "s/\ //g" | awk -F":" 'BEGIN { print "\{
 
 	             } 
               fi
- exit 0 
         ;;
 esac
 
