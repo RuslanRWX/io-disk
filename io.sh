@@ -85,8 +85,6 @@ geom disk list | grep 'Geom name' | sed "s/\ //g" | awk -F":" 'BEGIN { print "\{
 	       arcconf GETCONFIG 1 | grep "Reported Location" | awk '{print $7}' | awk 'BEGIN { print "{\n \"data\":[" }  { print  "{\"{#DISK}\":\""$1"\"},"  }  END  { print " ]\n}" }'  > ${tmpdir}/disk.io.tmp  && echo 0 || echo 1
     		     }
        		else {
-                      dcount=`ls -1 /dev | egrep '^sa[a-z]$|^sd[a-z]$' | wc -l` 
-                      line=`expr $dcount + 2`
 	   ls -1 /dev | egrep '^sa[a-z]$|^sd[a-z]$' | awk 'BEGIN { print "{\n \"data\":[" }  { print  "{\"{#DISK}\":\""$1"\"},"  }  END  { print " ]\n}" }'  > ${tmpdir}/disk.io.tmp && echo 0 || echo 1
 
 	             } 
