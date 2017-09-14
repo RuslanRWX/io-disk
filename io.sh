@@ -92,8 +92,6 @@ geom disk list | grep 'Geom name' | sed "s/\ //g" | awk -F":" 'BEGIN { print "\{
         ;;
 esac
 
-echo 0
-exit 0
 }
 
 RmComma() {
@@ -109,6 +107,8 @@ if [ $1 = "create"  ]; then
 {
     RmComma
     CreateDisk 
+    echo 0
+    exit 0
 } fi
 
 IO
