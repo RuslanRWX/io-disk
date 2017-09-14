@@ -94,10 +94,6 @@ geom disk list | grep 'Geom name' | sed "s/\ //g" | awk -F":" 'BEGIN { print "\{
         ;;
 esac
 
-
-
-
-chown zabbix:zabbix ${tmpdir}/disk.io.txt
 echo 0
 exit 0
 }
