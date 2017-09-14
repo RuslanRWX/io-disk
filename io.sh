@@ -107,7 +107,6 @@ if [ $1 = "create"  ]; then
 {
     RmComma
     CreateDisk 
-    echo 0
     exit 0
 } fi
 
